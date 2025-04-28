@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GCFL - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-orange-500 p-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-white">GCFL</div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#" class="text-white hover:text-purple-300">Rankings</a>
+      <a href="#" class="text-white hover:text-purple-300">Scores</a>
+      <a href="#" class="text-white hover:text-purple-300">Stats</a>
+      <a href="#" class="text-white hover:text-purple-300">Rulebook</a>
+      <a href="#" class="text-white hover:text-purple-300">Schoolbooks</a>
+    </div>
+    <div class="md:hidden">
+      <button id="menu-button" class="text-white focus:outline-none">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-orange-400 p-4 md:hidden">
+    <a href="#" class="block py-2 text-white hover:text-purple-300">Rankings</a>
+    <a href="#" class="block py-2 text-white hover:text-purple-300">Scores</a>
+    <a href="#" class="block py-2 text-white hover:text-purple-300">Stats</a>
+    <a href="#" class="block py-2 text-white hover:text-purple-300">Rulebook</a>
+    <a href="#" class="block py-2 text-white hover:text-purple-300">Schoolbooks</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-orange-500 to-purple-600 text-white">
+    <h1 class="text-5xl font-bold mb-4">Welcome to GCFL</h1>
+    <p class="text-xl mb-8">The #1 Competitive Football League on Roblox</p>
+    <a href="#" class="bg-white text-orange-600 font-semibold py-3 px-6 rounded-full hover:bg-purple-100 transition">Enroll Now</a>
+  </section>
+
+  <!-- Content Section -->
+  <section class="max-w-5xl mx-auto p-8">
+    <h2 class="text-3xl font-bold text-center mb-6">League Information</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2 text-purple-600">Rankings</h3>
+        <p>See who's on top this season!</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2 text-purple-600">Scores</h3>
+        <p>Latest game results updated weekly.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2 text-purple-600">Stats</h3>
+        <p>Track your performance and milestones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-orange-500 text-white p-4 text-center">
+    &copy; 2025 GCFL. All Rights Reserved.
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
